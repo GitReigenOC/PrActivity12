@@ -1,0 +1,96 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font: 16px Arial, sans-serif;
+  color: #1e293b;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  box-shadow: inset 0 -5px 12px #17255455;
+}
+
+nav a, footer a {
+  margin: 0 8px;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, footer a:hover { color: #fbbf86; }
+
+section {
+  margin: 24px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-card {
+  flex: 1 1 180px;
+  padding: 14px;
+  background: #f8fafc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+}
+
+table, form {
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+table { border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+
+form {
+  box-sizing: border-box;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+input, textarea { padding: 8px; font: inherit; }
+
+button {
+  width: fit-content;
+  padding: 9px 16px;
+  color: white;
+  background: #2563eb;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover { background: #1e40af; transform: translateY(-2px); }
+
+footer {
+  padding: 18px;
+  text-align: center;
+  background: linear-gradient(to right, #e2e8f0, #cbd5e1);
+}
